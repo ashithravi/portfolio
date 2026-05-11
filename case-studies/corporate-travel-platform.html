@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Corporate Travel Platform — Ashith Ravi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="../index.html"><span class="logo-italic">Ashith</span> <span class="logo-bold">Ravi</span></a>
+    <nav class="nav-links">
+      <a href="../index.html#how-i-think">How I Think</a>
+      <a href="../index.html#case-studies">Case Studies</a>
+      <a href="../index.html#decisions">Decisions</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <a class="btn btn-dark btn-sm" href="../index.html#contact">Let's talk</a>
+  </div>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="container">
+      <a class="cs-back" href="../index.html#case-studies">← Back to case studies</a>
+      <p class="cs-eyebrow">Case Study 02 — SamMegh Technologies</p>
+      <h1 class="cs-title">Streamlining corporate travel <span class="i accent">across booking, approvals, and payments.</span></h1>
+      <p class="cs-sub">Bringing transparency and structure to a fragmented enterprise travel workflow.</p>
+      <div class="cs-tags">
+        <span class="tag">B2B SaaS</span>
+        <span class="tag">Travel</span>
+        <span class="tag">Workflow</span>
+        <span class="tag">Payments</span>
+      </div>
+
+      <div class="story">
+        <div class="story-row">
+          <p class="story-label">Context</p>
+          <p class="story-body">Enterprises were managing corporate travel across multiple vendor platforms, with approvals handled through email and reconciliation done manually. That left workflows fragmented and gave both users and administrators only partial visibility.</p>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Problem</p>
+          <p class="story-body">Two issues drove most of the friction. Users abandoned bookings when pricing shifted between search and checkout. Approvals stalled because there was no structured workflow — finance only saw committed spend after the fact.</p>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Key Insight</p>
+          <p class="story-body">The primary issue wasn't a lack of functionality, but a lack of transparency and predictability — in pricing, in approval status, and in committed spend.</p>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Solutions</p>
+          <div class="story-body">
+            The focus was on improving system clarity and reducing uncertainty:
+            <ul>
+              <li>Introduced fare breakdowns using Google Maps data so the price felt anchored, not estimated.</li>
+              <li>Replaced email-based approvals with rule-based workflows and real-time status tracking.</li>
+              <li>Integrated Razorpay for payment reliability and cleaner settlement.</li>
+              <li>Simplified the booking flow by trimming unnecessary steps and inputs.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Trade-offs</p>
+          <p class="story-body">Deferred recommendation systems because data reliability wasn't there yet — predictability had to come first. Chose a single payment gateway to keep implementation and debugging tight, with a plan to add redundancy as volume grew.</p>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Impact</p>
+          <p class="story-body">Within one quarter, completed bookings increased by ~30%, drop-offs at the pricing stage reduced by ~20%, and approval turnaround time improved by ~40%. The system became more predictable for users and easier to manage for administrators.</p>
+        </div>
+
+        <div class="story-metrics">
+          <div class="story-metric">
+            <div class="num">+30<span style="font-size:32px">%</span></div>
+            <div class="lbl">Completed bookings (1 qtr)</div>
+          </div>
+          <div class="story-metric">
+            <div class="num">−20<span style="font-size:32px">%</span></div>
+            <div class="lbl">Fare-screen drop-offs</div>
+          </div>
+          <div class="story-metric">
+            <div class="num">+40<span style="font-size:32px">%</span></div>
+            <div class="lbl">Faster median approval</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <header class="cs-section-head">
+        <h2>Resources</h2>
+        <p>Supporting artefacts behind the work.</p>
+      </header>
+      <div class="res-links">
+        <a class="res-link" href="https://www.figma.com/proto/33FRsrlybFALc0xpOMLnUB/Travel-Agent-Version1.0?node-id=50-1858&t=VxDkVjDhNH6M8d2K-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=48%3A1098&show-proto-sidebar=1" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+          Wireframes <span class="arr">↗</span>
+        </a>
+        <a class="res-link" href="../assets/travel-tech-prd.pdf" target="_blank" rel="noopener" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+          PRD <span class="arr">↗</span>
+        </a>
+        <a class="res-link" href="../assets/travel-tech-teardown.pdf" target="_blank" rel="noopener" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+          Product teardown <span class="arr">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="cs-next">
+      <a href="zoom-access-board.html">← Previous: Zoom Access Board</a>
+      <a href="stayntouch-pms.html">Next: StayNTouch PMS →</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>

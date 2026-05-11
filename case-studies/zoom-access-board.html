@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Zoom Access Board — Ashith Ravi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="../index.html"><span class="logo-italic">Ashith</span> <span class="logo-bold">Ravi</span></a>
+    <nav class="nav-links">
+      <a href="../index.html#how-i-think">How I Think</a>
+      <a href="../index.html#case-studies">Case Studies</a>
+      <a href="../index.html#decisions">Decisions</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <a class="btn btn-dark btn-sm" href="../index.html#contact">Let's talk</a>
+  </div>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="container">
+      <a class="cs-back" href="../index.html#case-studies">← Back to case studies</a>
+      <p class="cs-eyebrow">Case Study 01 — Featured · Internal Tool</p>
+      <h1 class="cs-title">Zoom Access Board <span class="i accent">— a single source of truth for access, approvals, and reviews.</span></h1>
+      <p class="cs-sub">Centralized dashboard for meeting notes, action items, approvals, and access workflows — backed by automated routing, provisioning, and scheduled license reviews.</p>
+      <div class="cs-tags">
+        <span class="tag">Internal Tool</span>
+        <span class="tag">Access Mgmt</span>
+        <span class="tag">N8N Automation</span>
+        <span class="tag">Workflow</span>
+      </div>
+
+      <div class="story">
+        <div class="story-row">
+          <p class="story-label">Context</p>
+          <p class="story-body">Zoom-related operations — license assignment, access approvals, recording retention, and periodic reviews — were handled across IT tickets, Slack threads, email approvals, and ad-hoc spreadsheets. Different teams had partial visibility, and audits were difficult to assemble after the fact.</p>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Problem</p>
+          <p class="story-body">Routine requests took longer than they should. Approvers were unclear, ownership was distributed, and there was no single record of who had access to what or why. License waste was hard to track, and quarterly reviews relied on manual reconciliation.</p>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Key Insight</p>
+          <p class="story-body">The pain wasn't the absence of tools — every step already existed somewhere. The pain was that no single surface owned the request, the approval, and the audit trail together. Centralising the workflow mattered more than building new functionality.</p>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Solutions</p>
+          <div class="story-body">
+            A single board for all Zoom-related requests, with automation handling the predictable parts.
+            <ul>
+              <li>Unified intake covering license requests, host upgrades, recording access, and meeting notes follow-ups.</li>
+              <li>Rule-based routing to the right approver based on team, cost, and risk level.</li>
+              <li>N8N workflows for provisioning, deprovisioning, and scheduled license reviews.</li>
+              <li>Audit timeline on every request — who asked, who approved, what changed, when.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Trade-offs</p>
+          <p class="story-body">Chose to wrap existing systems with automation rather than replace them — faster to ship, but introduced a dependency on third-party APIs staying stable. Kept the UI deliberately plain so the focus stayed on workflow correctness rather than visual polish in v1.</p>
+        </div>
+        <div class="story-row">
+          <p class="story-label">Impact</p>
+          <p class="story-body">Routine requests resolved in minutes instead of days. Quarterly license reviews shifted from a multi-day exercise to a scheduled job with a human checkpoint. Every access change became traceable, which made audits straightforward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <div class="container">
+      <header class="cs-section-head">
+        <h2>Resources</h2>
+        <p>Supporting artefacts behind the work.</p>
+      </header>
+      <div class="res-links">
+        <a class="res-link" href="https://www.figma.com/proto/wZvJMO2qTolDciYzrDqII5/Zoom-Updated?node-id=20-1751&p=f&t=YyRrkXLsN5ehX7Na-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=20%3A1751&show-proto-sidebar=1" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+          Wireframes <span class="arr">↗</span>
+        </a>
+        <a class="res-link" href="../assets/zoom-prd.pdf" target="_blank" rel="noopener" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+          PRD <span class="arr">↗</span>
+        </a>
+        <a class="res-link" href="../assets/zoom-teardown.pdf" target="_blank" rel="noopener" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h18M3 12h18M3 17h12"/></svg>
+          Product teardown <span class="arr">↗</span>
+        </a>
+        <a class="res-link" href="#n8n">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 6H15M18 8.5v7M16 18H8"/></svg>
+          N8N automation <span class="arr">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section" id="n8n">
+    <div class="container">
+      <div class="subsection">
+        <div class="subsection-head">
+          <h3>N8N Workflow Automation</h3>
+          <span class="badge">implementation detail</span>
+        </div>
+        <p class="sub-lede">A lightweight automation layer behind the board. N8N handles the predictable steps — provisioning, deprovisioning, reminder cadence, and scheduled license review jobs — so the human queue only sees the decisions that actually need a human.</p>
+        <div class="res-links">
+          <a class="res-link" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 6H15M18 8.5v7M16 18H8"/></svg>
+            View N8N workflow <span class="arr">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="cs-next">
+      <a href="../index.html#case-studies">← All case studies</a>
+      <a href="corporate-travel-platform.html">Next: Corporate Travel Platform →</a>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
